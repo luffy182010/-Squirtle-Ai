@@ -1,11 +1,11 @@
-import { Client } from 'meowsab';
+import { Client } from 'RIOTIX';
 import { group, access } from "./system/control.js";
 import UltraDB from "./system/UltraDB.js";
 import sub from './sub.js';
 
 /* =========== Client ========== */
 const client = new Client({
-  phoneNumber: '20123456789', // Bot number
+  phoneNumber: '966570920082', // Bot number
   prefix: [".", "/", "!"],
   fromMe: false, 
   owners: [
@@ -16,7 +16,9 @@ const client = new Client({
   // Owner 3
     { name: "Sukuna", jid: "201033024135@s.whatsapp.net", lid: "50414477168824@lid" },
   // Owner 4 
-   { name: "عمورتي", jid: "201050079089@s.whatsapp.net", lid: "51664513925368@lid" }
+   { name: "عمورتي", jid: "201050079089@s.whatsapp.net", lid: "51664513925368@lid" },
+  //owner 5
+    { name: "RIOTIX", jid: "966570920082@s.whatsapp.net", lid: "50414477168824@lid" },
   ],
   settings: { noWelcome: false },
   commandsPath: './plugins'
@@ -33,22 +35,21 @@ if (!global.db) {
 /* =========== Config ========== */
 const { config } = client;
 config.info = { 
-  nameBot: "♡ 𝙋𝙊𝙈𝙉𝙄 🎪 〈", 
-  nameChannel: "𝐕𝐈𝐈7 ~ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🕷️", 
+  nameBot: "♡ Aizen〈", 
+  nameChannel: "Aizen ~ Bot", 
   idChannel: "120363225356834044@newsletter",
   urls: {
     repo: "https://github.com/deveni0/Pomni-AI",
-    api: "https://emam-api.web.id",
-    channel: "https://whatsapp.com/channel/0029VaQim2bAu3aPsRVaDq3v"
+    channel: "https//whatsapp/com/channel/0029VbCsaGv5a24CpLHkYb2D"
   },
   copyright: { 
     pack: 'ڤـ ـ VA ـ ـا', 
     author: 'VA'
   },
   images: [
-    "https://i.pinimg.com/originals/11/26/97/11269786cdb625c60213212aa66273a9.png",
-    "https://i.pinimg.com/originals/e2/21/20/e221203f319df949ee65585a657501a2.jpg",
-    "https://i.pinimg.com/originals/bb/77/0f/bb770fad66a634a6b3bf93e9c00bf4e5.jpg"
+    "https://i1-c.pinimg.com/1200x/91/18/c0/9118c02f0625ba39e07536f37d7322c7.jpg",
+    "https://i.pinimg.com/originals/77/55/ba/7755ba3ebb02fdad823772dea6d6622f.gif",
+    "https://i1-c.pinimg.com/1200x/fe/4f/c5/fe4fc5a58da3f4476be6241ad037f223.jpg"
   ]
 };
 
